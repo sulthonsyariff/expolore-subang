@@ -1,0 +1,511 @@
+      
+@font-face {
+    font-family: "karla";
+    src: url('../assets/fonts/Karla-Regular.ttf');
+}
+      
+@font-face {
+    font-family: "Roboto";
+    src: url('../assets/fonts/RobotoSlab-Light-webfont.woff');
+}
+      #section3 {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-family: 'Roboto','sans-serif';
+        color: white;
+      }
+      #map {
+        width: 75%;
+        height: 100%;
+        float: left;
+      }
+      #keterangan {
+        padding-top: 20px;
+        width: 25%;
+        height: 100%;
+        float: right;
+      }
+      #floating-panel {
+        color: white;
+        width: 95%;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      select {
+        width: 75%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 2px;
+        padding-left: 2px;
+        color: #000;
+        font-family: 'Roboto';
+      }
+
+      /*alun alun*/
+      .petunjukALN-CTR {
+        width: 83%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+      }
+      .petunjukALN-CTR.munculkan{
+        display: inline-block;
+      }
+      .petunjukALN-PB {
+        width: 83%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+      }
+      .petunjukALN-PB.munculkan{
+        display: inline-block;
+      }
+      .petunjukALN-CC {
+        width: 83%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukALN-CC.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukALN-TP {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukALN-TP.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukALN-PM {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukALN-PM.munculkan{
+        display: inline-block;
+      }
+
+  /*Wesel*/
+
+      .petunjukWSL-CTR {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+
+      }
+      .petunjukWSL-CTR.munculkan{
+        display: inline-block;
+      } 
+      .petunjukWSL-PB {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukWSL-PB.munculkan{
+        display: inline-block;
+      }
+      .petunjukWSL-CC {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukWSL-CC.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukWSL-TP {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukWSL-TP.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukWSL-PM {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukWSL-PM.munculkan{
+        display: inline-block;
+      }
+
+      /*Terminal */
+
+      .petunjukTML-CTR {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+
+      }
+      .petunjukTML-CTR.munculkan{
+        display: inline-block;
+      } 
+      .petunjukTML-PB {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukTML-PB.munculkan{
+        display: inline-block;
+      }
+      .petunjukTML-CC {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukTML-CC.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukTML-TP {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukTML-TP.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukTML-PM {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukTML-PM.munculkan{
+        display: inline-block;
+      }
+
+
+      /*Brigjen*/
+
+      .petunjukBGJ-CTR {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+
+      }
+      .petunjukBGJ-CTR.munculkan{
+        display: inline-block;
+      } 
+      .petunjukBGJ-PB {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukBGJ-PB.munculkan{
+        display: inline-block;
+      }
+      .petunjukBGJ-CC {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukBGJ-CC.munculkan{
+        display: inline-block;
+      }
+
+      .petunjukBGJ-TP {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukBGJ-TP.munculkan{
+        display: inline-block;
+      }
+      .petunjukBGJ-PM {
+        width: 85%;
+        margin-left: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+        display: none;
+        color: white;
+
+      }
+      .petunjukBGJ-PM.munculkan{
+        display: inline-block;
+      }
+
+      .time {
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      .time-ALN-CTR {
+         display: none;
+      }
+      .time-ALN-PB {
+         display: none;   
+      }
+      .icon-kendaraan {
+        float: left;
+        margin-right: 10px;
+        padding-right: 5px;
+        width: 40px;
+        height: 30px; 
+      }
+      .icon-kendaraan img {
+        width: 100%;
+        height: 100%;  
+      }
+      span.dari {
+        font-family: 'Roboto','sans-serif';        
+        font-size: 14px;
+      }
+      span.ke {
+        font-family: 'Roboto','sans-serif';        
+        font-size: 14px;
+        margin-right:11px;
+      }      
+      h2.judul-ex {
+        margin-left: 170px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        text-align: left;
+      }
+      .logo-img{
+        width: 60px;
+        height: 60px;
+        background-image: url(logo.png);
+        float: left;
+        border-radius: 50%;
+        margin-left: 90px;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      .garis-bawah {
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .Penjelasan {
+        font-family: 'Roboto';
+        font-weight: 100;
+        float: right;
+      }
+      td {
+        display: table-cell; 
+        vertical-align:middle;
+      }
+      .harga-angkot {
+        float: right;
+        color: yellow;
+      }
+      .wadah-total {
+        margin-top: 20px;
+      }
+      .total {
+        float: left;
+        margin-left: 20px;    
+        font-size: 20px;            
+      }
+      .harga-total {
+        float: right;
+        margin-right: 15px;
+        font-size: 20px;
+      }
+      .wadah-total-1 {
+        display: none;
+      }
+      .wadah-total-2 {
+        display: none;
+      }
+      .wadah-total-3 {
+        display: none;
+      }
+      .wadah-total-4 {
+        display: none;
+      }
+      .wadah-total-5 {
+        display: none;
+      }
+      .wadah-total-6 {
+        display: none;
+      }
+      .wadah-total-7 {
+        display: none;
+      }
+      .wadah-total-8 {
+        display: none;
+      }
+      .wadah-total-9 {
+        display: none;
+      }
+      .wadah-total-10 {
+        display: none;
+      }
+      .wadah-total-11 {
+        display: none;
+      }
+       .wadah-total-12 {
+        display: none;
+      }
+       .wadah-total-13 {
+        display: none;
+      }
+       .wadah-total-14 {
+        display: none;
+      }
+       .wadah-total-15 {
+        display: none;
+      }
+       .wadah-total-16 {
+        display: none;
+      }
+       .wadah-total-17 {
+        display: none;
+      }
+       .wadah-total-18 {
+        display: none;
+      }
+       .wadah-total-19 {
+        display: none;
+      }
+       .wadah-total-20 {
+        display: none;
+      }
+      .wadah-total-1.munculkan {
+        display: block;
+      }
+       .wadah-total-2.munculkan {
+        display: block;
+      }
+       .wadah-total-3.munculkan {
+        display: block;
+      }
+       .wadah-total-4.munculkan {
+        display: block;
+      }
+       .wadah-total-5.munculkan {
+        display: block;
+      }
+      .wadah-total-6.munculkan {
+        display: block;
+      }
+      .wadah-total-7.munculkan {
+        display: block;
+      }
+      .wadah-total-8.munculkan {
+        display: block;
+      }
+      .wadah-total-9.munculkan {
+        display: block;
+      }
+      .wadah-total-10.munculkan {
+        display: block;
+      }
+      .wadah-total-11.munculkan {
+        display: block;
+      }
+       .wadah-total-12.munculkan {
+        display: block;
+      }
+       .wadah-total-13.munculkan {
+        display: block;
+      }
+       .wadah-total-14.munculkan {
+        display: block;
+      }
+       .wadah-total-15.munculkan {
+        display: block;
+      }
+       .wadah-total-16.munculkan {
+        display: block;
+      }
+       .wadah-total-17.munculkan {
+        display: block;
+      }
+       .wadah-total-18.munculkan {
+        display: block;
+      }
+       .wadah-total-19.munculkan {
+        display: block;
+      }
+       .wadah-total-20.munculkan {
+        display: block;
+      }
+     #bodyContent p{
+        color: black;
+      }

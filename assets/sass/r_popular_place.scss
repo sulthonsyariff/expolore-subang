@@ -1,0 +1,262 @@
+@media screen and (max-width: 320px) {
+	.container-publictransport {
+		width: 100%;
+		position: relative;
+		background-color: #fff;
+		font-family: "Montserrat",sans-serif;
+		padding: 0;
+		margin: 0;
+		height: 100vh;
+		background: inherit;
+		margin-top: -120px;
+		z-index: 3;
+	}
+	.container-publictransport:before {
+		content:'';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: inherit;
+		top: -100px;
+		right: 0;
+		left: 0;
+		transform-origin: top right;
+		transform: skewY(-4deg);
+		z-index: -1;
+	}
+	.container-publictransport:after {
+		content:'';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/backtrans2.jpg);
+		background-size: cover;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		transform-origin: top right;
+		transform: skewY(-4deg);
+	}
+	.publictransport {
+		
+		position: relative;
+
+		.judul {
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			font-size: 25px;
+			font-weight: 400;
+			text-align: center;
+			padding-top: 50px;
+			padding-bottom: 0px;
+			color: #fff;
+			transform: scale(0);
+			opacity: 0;	
+			transition: 1s;
+			transition-delay:3s;
+		
+		}
+		.judul.munculsiah {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		.wadah-transportation {
+			position: absolute;
+			margin-left: 0px;			
+			width: 100%;
+			height: 440px;
+			background-color: rgba(#000, .6);
+			border-radius: 5px;
+			opacity: 0;		
+			
+			.nama-angkot {
+				font-family: 'raleway';
+				font-weight: bold;
+				position: absolute;
+				text-transform: uppercase;
+				width: 300px;
+				top: 50%;
+				color: #fff;
+				font-size: 15px;
+				float: left;
+				left: -140px;
+				text-align: center;
+				letter-spacing: 3px;
+				transform: rotate(-90deg);
+				z-index: 3;
+			}
+			.garis-pinggir {
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				background-color: #fff;
+				left: 20px;
+			}
+			.garis-pinggir-kanan {
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				background-color: #fff;
+				right: 20px;
+			}		
+			.gambar-angkot {
+				opacity: 0;
+				position: absolute;
+				width: 200px;
+				height: 150px;
+				left: 50%;
+				top: 20px;
+			}	
+			.gambar-angkot-1.aktif-gambar {
+				background-image: url(../img/angkot/HijauBiru.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: 1s;
+				opacity: 1;
+			}					
+			.gambar-angkot-2.aktif-gambar {
+				background-image: url(../img/angkot/Biru.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: 1s;
+				opacity: 1;
+			}					
+			.gambar-angkot-3.aktif-gambar {
+				background-image: url(../img/angkot/HijauOren.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: 1s;
+				opacity: 1;
+			}					
+			.gambar-angkot-4.aktif-gambar {
+				background-image: url(../img/angkot/Hijau.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: 1s;
+				opacity: 1;
+			}					
+			.gambar-angkot-5.aktif-gambar {
+				background-image: url(../img/angkot/Elp.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: 1s;
+				opacity: 1;
+			}					
+			.jalur-angkot {
+				position: absolute;
+				font-weight: bold;
+				font-size: 15px;
+				color: #fff;
+				text-align: center;
+				font-family: 'raleway';
+				top: 30%;
+				left: 60%;
+				transform: translateX(-50%);
+				z-index: 3;
+				opacity: 0;
+				transition: 1s;
+				transition-delay:1s;			
+			}
+			.deskripsi-angkot {
+				position: absolute;
+				font-size: 14px;
+				color: #fff;
+				font-family: 'raleway';
+				top: 38%;
+				left: 60%;
+				transform: translateX(-50%);
+				text-align: center;
+				z-index: 3;	
+				opacity: 0;
+				transition: 1s;
+				transition-delay:1s;
+			}		
+
+			.geser {
+				position: absolute;
+				right: -113px;
+				top: 48%;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				width: 125px;
+				height: 15px;
+				transform: translate(-50%) rotate(90deg);
+			}
+			.pilih {
+				display: inline-block;
+				float: left;
+				width: 10px;
+				height: 10px;
+				background: rgba(255,255,255,0.3);
+				border-radius: 50%;
+				margin-left: 10px;
+				cursor: pointer;
+				z-index: 10;
+			}
+			.aktif {
+				background: #fff;
+			}
+			.geser-kiri-angkot {
+				cursor: pointer;			
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 20%;
+				z-index: 4;			
+				opacity: 0;
+				transition: 1s;
+				transition-delay: 2s;
+				i {
+					font-size: 20px;
+					color: #fff;
+					transition: .4s;
+				}
+			}
+			.geser-kiri-angkot:hover i {
+				margin-left : -2px;
+			}
+			.geser-kanan-angkot {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 20%;
+				z-index: 4;
+				opacity: 0;
+				transition: 1s;
+				transition-delay: 2s;			
+				i {
+					font-size: 20px;
+					transition: .4s;
+					color: #fff;
+				}
+			}	
+			.geser-kanan-angkot:hover i {
+				margin-right : -2px;
+			}	
+		}
+		.transport-1.aktifkan,
+		.transport-2.aktifkan,
+		.transport-3.aktifkan,
+		.transport-4.aktifkan,
+		.transport-5.aktifkan, {
+			opacity: 1;
+		}
+
+	}	
+}

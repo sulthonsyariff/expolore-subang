@@ -1,0 +1,332 @@
+.container-galery {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  font-family: "Montserrat",sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url(../img/gunungbg.png);
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1; }
+
+.galery {
+  margin: 0 75px 0 77px;
+  position: relative; }
+  .galery .judul {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 2.8s; }
+  .galery .img-thm {
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    opacity: 0;
+    -webkit-transform: translate(0, 100px);
+    -ms-transform: translate(0, 100px);
+    transform: translate(0, 100px); }
+  .galery .img-thm.muncul {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    overflow: hidden; }
+  .galery .mountain {
+    margin-top: 120px;
+    position: relative;
+    float: left;
+    width: 283px;
+    margin-right: 13px;
+    height: 330px;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; }
+    .galery .mountain:hover img {
+      transform: scale(1); }
+    .galery .mountain img {
+      width: 100%;
+      height: 100%;
+      transition: .8s;
+      transform: scale(1.2); }
+    .galery .mountain span {
+      font-size: 18px;
+      position: absolute;
+      color: #fff;
+      left: 40px;
+      top: 9px; }
+  .galery .sea {
+    margin-top: 70px;
+    float: left;
+    position: relative;
+    width: 283px;
+    margin-right: 13px;
+    height: 330px;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; }
+    .galery .sea:hover img {
+      transform: scale(1); }
+    .galery .sea img {
+      width: 100%;
+      height: 100%;
+      transition: .8s;
+      transform: scale(1.2); }
+    .galery .sea span {
+      font-size: 18px;
+      position: absolute;
+      color: #fff;
+      left: 40px;
+      top: 9px; }
+  .galery .waterfall {
+    margin-top: 20px;
+    float: left;
+    position: relative;
+    width: 283px;
+    margin-right: 13px;
+    height: 330px;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; }
+    .galery .waterfall:hover img {
+      transform: scale(1); }
+    .galery .waterfall img {
+      width: 100%;
+      height: 100%;
+      transition: .8s;
+      transform: scale(1.2); }
+    .galery .waterfall span {
+      font-size: 18px;
+      position: absolute;
+      color: #fff;
+      left: 40px;
+      top: 9px; }
+  .galery .hotspring {
+    margin-top: -30px;
+    float: left;
+    position: relative;
+    width: 283px;
+    margin-right: 13px;
+    height: 330px;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; }
+    .galery .hotspring:hover img {
+      transform: scale(1); }
+    .galery .hotspring img {
+      width: 100%;
+      height: 100%;
+      transition: .8s;
+      transform: scale(1.2); }
+    .galery .hotspring span {
+      font-size: 18px;
+      position: absolute;
+      color: #fff;
+      left: 40px;
+      top: 9px; }
+  .galery .garis-pinggir {
+    width: 30px;
+    height: 2px;
+    top: 17px;
+    background: #fff;
+    position: absolute; }
+  .galery .img-thm.muncul {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    overflow: hidden; }
+
+/*Overlay*/
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  padding: 100px; }
+  .overlay .imgM {
+    width: 300px;
+    height: 420px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: .8s;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    overflow: hidden; }
+    .overlay .imgM:hover {
+      cursor: pointer; }
+
+/*Hover IMG*/
+.hover-gambar {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 500px;
+  text-decoration: none;
+  opacity: 0; }
+
+.hover-gambar h4 {
+  width: 100%;
+  opacity: 0.8;
+  font-family: 'River';
+  color: #ecf0f1;
+  font-size: 45px;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 65px; }
+  .hover-gambar h4.tkp {
+    top: 45px; }
+
+.hover-gambar p {
+  font-family: 'Variane';
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  text-decoration: none;
+  position: absolute;
+  top: 42%; }
+  .hover-gambar p.tkp {
+    top: 53%; }
+  .hover-gambar p.fasilitas {
+    font-family: 'Karla';
+    top: 25%;
+    font-size: 16px;
+    text-align: center; }
+  .hover-gambar p.penjelasan {
+    font-family: 'Karla';
+    top: 50%;
+    font-size: 15px;
+    text-align: justify;
+    width: 90%;
+    left: 5%; }
+  .hover-gambar p.idr {
+    top: 85%;
+    left: -75px; }
+
+.imgM:hover .hover-gambar {
+  opacity: 1;
+  top: 0;
+  right: 0;
+  transition: 0.5s; }
+
+.overlay:target {
+  z-index: 999;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: auto;
+  width: auto;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.wadah-img {
+  margin: 0 auto;
+  width: 950px;
+  height: 440px;
+  overflow: hidden; }
+  .wadah-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.overlay .close {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  line-height: 30px;
+  font-size: 30px;
+  text-align: center; }
+
+#kanan, #kanan2, #kanan3, #kanan4, #kiri, #kiri2, #kiri3, #kiri4 {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  opacity: 1;
+  margin: 0 25px;
+  cursor: pointer; }
+
+#kiri, #kiri2, #kiri3, #kiri4 {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50px); }
+
+#kanan, #kanan2, #kanan3, #kanan4 {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50px); }
+
+.imgM-1 {
+  background-image: url(../img/galery/mountain/mountain-3.jpg);
+  background-size: cover; }
+
+.imgM-2 {
+  background-image: url(../img/galery/mountain/bukit-pamoyanan.jpg);
+  background-size: cover; }
+
+.imgM-3 {
+  background-image: url(../img/galery/mountain/mountain-4.jpg);
+  background-size: cover; }
+
+.imgH-1 {
+  background-image: url(../img/galery/hotspring/ciater-1.jpg);
+  background-size: cover; }
+
+.imgS-1 {
+  background-image: url(../img/galery/sea/pondok-bali.jpg);
+  background-size: cover; }
+
+.imgS-2 {
+  background-image: url(../img/galery/sea/pondok-bali3.jpg);
+  background-size: cover; }
+
+.imgS-3 {
+  background-image: url(../img/galery/sea/pondok-bali2.jpg);
+  background-size: cover; }
+
+.imgW-1 {
+  background-image: url(../img/galery/waterfall/curug-cina.jpg);
+  background-size: cover; }
+
+.imgW-2 {
+  background-image: url(../img/galery/waterfall/waterfall.jpg);
+  background-size: cover; }
+
+.imgW-3 {
+  background-image: url(../img/galery/waterfall/curug-masigit-4.jpg);
+  background-size: cover; }
+
+.imgW-4 {
+  background-image: url(../img/galery/waterfall/curug-goa-badak.jpg);
+  background-size: cover; }
+
+/*# sourceMappingURL=galery.css.map */

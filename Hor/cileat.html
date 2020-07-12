@@ -1,0 +1,1238 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Curug Cileat</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords" content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="gma/style.css" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> -->
+	<link href="../assets/css/fontawesome-all.css" rel="stylesheet">
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery.pagepiling.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+			$('#pagepiling').pagepiling({
+				direction: 'horizontal',
+				menu: '#menu',
+				anchors: ['page1', 'page2', 'page3'],
+				sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+				navigation: {
+					'position': 'right',
+					'tooltips': ['Discover', 'Description','Go!']
+				},
+				afterRender: function(){
+					$('#pp-nav').addClass('custom');
+				},
+				afterLoad: function(anchorLink, index){
+					if(index>1){
+						$('#pp-nav').removeClass('custom');
+					}else{
+						$('#pp-nav').addClass('custom');
+					}
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<a href="../index.html#waterfall"><div id="icon-back"><i class="fas fa-chevron-left"></i></div></a>
+	<div id="pagepiling">
+		<div class="section" id="section1">
+
+			<div class="pembungkus"></div>
+			<div class="pic-wrapper">
+				<figure class="pic-1cileat"></figure>
+				<figure class="pic-2cileat"></figure>
+				<figure class="pic-3cileat"></figure>
+				<figure class="pic-4cileat"></figure>
+			</div>
+			<div class="emblem emb-cileat"></div>
+			
+			<p class="coords">"N 49* 16' 35.173" / W 49* 16' 35.173"</p>
+			
+			<div class="info">
+				<div class="location">
+					<div class="marker"></div>
+					<div class="text">
+						<h3>Mayangan</h3>
+						<p>Subang, Indonesia.</p>
+					</div>
+				</div>  
+				<div class="ticket">
+					<span class="per">from/per person</span>
+					<span class="idr"><sup>IDR</sup></span>
+					<span class="harga">10.000</span>
+				</div>
+			</div>
+
+			<a href="#page3"><button class="route"><p>Route</p><i class="fas fa-chevron-right" aria-hidden="true"></i></button></a>
+
+
+		</div>
+		<div class="section cf"  id="section2">
+			<div class="wrapper">
+				<div class="container">
+
+					<div class="slideshow">
+
+						<div class="slideshow-left">
+
+							<div class="Lslide">
+								<div class="Lslide-content">
+									<h2>Description</h2>
+									<p>Curug Cileat is the highest waterfall located in Subang Regency, this place there are 5 pieces of different waterfalls and can be found during the journey. Curug Cileat has a height of ± 100 m and located in the area of Mount Canggah. Because of its location which is at the foot of the mountain, then to be able to meet this waterfall you have to prepare a little power for hiking to the foot of Mount Canggah.
+									Although it is a bit difficult to reach this waterfall because of the extreme access road, but it will pay off with beautiful natural scenery and can see some waterfall opening before arriving at Curug Cileat.</p>
+
+									<div class="button">
+										<a href="#page3">
+											<p>Route</p>
+											<i class="fas fa-chevron-right" aria-hidden="true"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="Lslide">
+								<div class="Lslide-content">
+									<h2>Facilities</h2>
+									
+									<p>There are no facilities in curug cileat, because the distance is very far from the settlement so the atmosphere is still beautiful and no buildings.
+									
+
+									<div class="button">
+										<a href="#page3">
+											<p>Route</p>
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="Lslide">
+								<div class="Lslide-content">
+									<h2>Road Access</h2>
+									<p>For those who use public transportation from the city terminal Subang Elf vehicle with the route Subang - Tanjung Siang. Get off at the dorms, then take a motorcycle taxi to Cibago Village.
+									Then from the last village, Cibago Village, the journey continues on foot through a rocky path about 5 km to arrive at the location of the waterfall.</p>
+
+									<div class="button">
+										<a href="#page3">
+											<p>Route</p>
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+									</div>
+								</div>
+							</div>    
+
+						</div>
+
+						<div class="slideshow-right">
+
+							<div class="Rslide orencileat">
+							</div>
+
+							<div class="Rslide pinkcileat ">
+							</div>     
+							<div class="Rslide birucileat">
+							</div>                                              
+						</div>    
+
+
+						<div class="control">
+							<div class="oncontrol control-top">
+								<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							</div>
+							<div class="oncontrol control-bottom">
+								<i class="fa fa-arrow-down" aria-hidden="true"></i>
+							</div>                          
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section cf"  id="section3">
+			<div id="map"></div>
+			<div id="startLat"></div>
+			<div id="startLon"></div>
+
+			<div id="keterangan">
+				<div id="floating-panel">
+					<div class="logo-img"></div>
+					<h2 class="judul-ex">EXPLORE <br> SUBANG </h2>
+					<span class="dari">DARI : </span>
+					<select id="start">
+						<option value="" >---Tempat Anda---</optionx>
+						<option value="Alun Alun Kabupaten Subang, Jalan RA Wangsa Ghofrana, Karanganyar, Subang Regency, Jawa Barat, Indonesien">Alun - Alun Subang</option>
+						<option value="Makam Wesel, Karanganyar, Subang, Jawa Barat, Indonesien">Wesel</option>
+						<option value="Terminal Subang, Sukamelang, Subang Regency, Jawa Barat, Indonesien">Terminal Subang</option><option value="Jl. Brigjen Katamso No.37, Dangdeur, Kec. Subang, Kabupaten Subang, Jawa Barat , Indonesien">Jl. Brigjen Katamso</option>              
+					</select>
+					<br>
+					<span class="ke">KE :</span>
+					<select id="end">
+						<option value="Curug Cileat, Capunagara, Subang Regency, Jawa Barat, Indonesien">Curug Cileat</option>
+					</select>
+				</div>
+
+				<!-- Alun alun ke ciater -->
+				<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukALN-CTR">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Wisma Karya Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Jalan Cagak - Ciater menuju Ke tempat wisata Pemandian air panas Ciater sekitar 12 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+							</td>
+						</tr>						
+					</table>
+				</div>
+				<div class="wadah-total-1">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 10.000</p>
+				</div>
+
+
+				<div class="petunjukALN-PB">
+				<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi Menuju Pertigaan Dapur tutug Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Elf Pagaden - Mayangan Menuju Ke Wisata Alam Pantai Pondok Bali sekitar 40 KM</div>
+								<div class="harga-angkot">Rp. 25.000</div>
+
+							</td>
+						</tr>			
+					</table>
+				</div>
+				<div class="wadah-total-2">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 28.000</p>
+				</div>
+
+				<!-- Alun alun ke cileat  -->
+				<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukALN-CC">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Wisma Karya Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekitar 10 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Cisalak menuju Ke tempat wisata curug Cileat sekitar 20 KM</div>
+								<div class="harga-angkot">Rp. 10.000</div>
+							</td>
+						</tr>						
+					</table>
+				</div>
+				<div class="wadah-total-3">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 15.000</p>
+				</div>
+
+
+				<!-- Alun alun ke Tangkuban Perahu  -->
+				<!--  <div class="time time-ALN-TP"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukALN-TP">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Wisma Karya Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 Kilometer </div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Elp menuju Wisata Gunung Tangkuban perahu sekitar 22 KM </div>
+								<div class="harga-angkot">Rp. 15.000</div>
+							</td>
+						</tr>						
+					</table>
+				</div>
+				<div class="wadah-total-13">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 20.000</p>
+				</div>
+				<!-- Alun ke Pamoyanan -->
+					<div class="petunjukALN-PM">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Wisma Karya Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekitar 10 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Tanjung siang - Cisalak menuju Ke tempat wisata Bukit Pamoyanan sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 15000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Jalan Menuju Objek Wisata Bukit Pamoyanan sekitar 1 KM</div>
+							</td>
+						</tr>						
+					</table>
+				</div>
+				<div class="wadah-total-17">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 10.000</p>
+				</div>
+
+				<!-- Wesel ke Ciater -->
+				<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukWSL-CTR">
+
+						<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Perempatan Wesel Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Jalan Cagak - Ciater menuju Ke tempat wisata Pemandian air panas Ciater sekitar 12 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>							
+					</table>
+				</div>
+				<div class="wadah-total-4">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 13.000</p>
+				</div>
+
+				<!-- Wesel Pantai Pondok Bali -->
+				<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukWSL-PB">
+						<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Perempatan Wesel Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Hijau.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pagaden menuju Pertigaan Dapur Tutug Sekitar 2 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Elf Pagaden - Mayangan Menuju Ke Wisata Alam Pantai Pondok Bali sekitar 40 KM</div>
+								<div class="harga-angkot">Rp. 25.000</div>
+							</td>
+						</tr>					
+					</table>
+				</div>
+				<div class="wadah-total-5">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 28.000</p>
+				</div>
+
+					<!-- Wesel ke Cileat -->
+					<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukWSL-CC">
+						<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Perempatan Wesel Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekitar 10 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Cisalak menuju Ke tempat wisata curug Cileat sekitar 20 KM</div>
+								<div class="harga-angkot">Rp. 10.000</div>
+							</td>
+						</tr>					
+					</table>
+				</div>
+				<div class="wadah-total-6">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 18.000</p>
+				</div>
+					<!-- Wesel ke tangkuban perahu -->
+					<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukWSL-TP">
+
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Perempatan Wesel Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Elp Menuju Wisata Gunung Tangkuban Perahu sekitar 22 KM</div>
+								<div class="harga-angkot">Rp. 15.000</div>
+							</td>
+						</tr>							
+					</table>
+				</div>
+				<div class="wadah-total-14">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 23.000</p>
+				</div>
+
+				<!-- Wesel ke Pamoyanan -->
+					<div class="petunjukWSL-PM">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Perempatan Wesel Sekitar 200 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekitar 10 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Tanjung siang - Cisalak menuju Ke tempat wisata Bukit Pamoyanan sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 15000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Jalan Menuju Objek Wisata Bukit Pamoyanan sekitar 1 KM</div>
+							</td>
+						</tr>							
+					</table>
+				</div>
+				<div class="wadah-total-18">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 23.000</p>
+				</div>
+
+					<!-- Terminal Ke ciater -->
+					<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukTML-CTR">
+							<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Jl. Darmodiharjo sekitar 100 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Jalan Cagak - Ciater menuju Ke tempat wisata Pemandian air panas Ciater sekitar 12 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+
+					</table>
+				</div>
+				<div class="wadah-total-7">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 13.000</p>
+				</div>
+
+					<!-- Terminal Ke Pondok Bali -->
+					<!-- <div class="time time-ALN-CTR"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukTML-PB">
+							<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Jl. Darmodiharjo sekitar 100 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Pertigaan dapur tutug sekitar 2 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Elf Pagaden - Mayangan Menuju Ke Wisata Alam Pantai Pondok Bali sekitar 40 KM</div>
+								<div class="harga-angkot">Rp. 25.000</div>
+							</td>
+						</tr>				
+					</table>
+				</div>
+				<div class="wadah-total-8">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 28.000</p>
+				</div>
+						
+
+					<!-- Terminal ke cileat  -->
+					<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukTML-CC">
+							<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Jl. Darmodiharjo sekitar 100 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekita 10 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Cisalak menuju Ke tempat wisata curug Cileat sekitar 20 KM</div>
+								<div class="harga-angkot">Rp.10.000</div>
+							</td>
+						</tr>				
+					</table>
+				</div>
+				<div class="wadah-total-9">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 18.000</p>
+				</div>
+				
+					<!-- Terminal ke tangkuban parahu  -->
+					<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukTML-TP">
+						<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Jl. Darmodiharjo sekitar 100 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Elp Menuju Wisata Gunung Tangkuban Perahu sekitar 22 KM</div>
+								<div class="harga-angkot">Rp. 15.000</div>
+							</td>
+						</tr>
+
+					</table>
+				</div>
+				<div class="wadah-total-15">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 23.000</p>
+				</div>
+
+				<!-- Terminal Ke Pamoyanan	 -->
+
+				<div class="petunjukTML-PM">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Jalan Menuju Jl. Darmodiharjo sekitar 100 Meter</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekitar 10 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Tanjung siang - Cisalak menuju Ke tempat wisata Bukit Pamoyanan sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 15000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Jalan Menuju Objek Wisata Bukit Pamoyanan sekitar 1 KM</div>
+							</td>
+						</tr>					
+					</table>
+				</div>
+				<div class="wadah-total-19">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 23.000</p>
+				</div>
+
+					<!-- Brigjen ke ciater -->
+					<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+					<div class="petunjukBGJ-CTR">
+						<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauOren.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Jalan Cagak - Ciater menuju Ke tempat wisata Pemandian air panas Ciater sekitar 12 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="wadah-total-10">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 13.000</p>
+				</div>
+						
+						<!-- Brigjen ke pantai pondok Bali -->
+						<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukBGJ-PB">
+				<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+							<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera-Sompi menuju Pertigaan Dapur Tutug Sekitar 2 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Elf Pagaden - Mayangan Menuju Ke Wisata Alam Pantai Pondok Bali sekitar 40 KM</div>
+								<div class="harga-angkot">Rp. 25.000</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="wadah-total-11">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 28.000</p>
+				</div>
+							<!-- Brigjen ke Curug cileat -->
+							<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+				<div class="petunjukBGJ-CC">
+				<table width="100%">
+					<tr>
+						<td>
+							<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauBiru.png"></div>
+							</td>
+							<td>
+							<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+					</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekita 10 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Cisalak menuju Ke tempat wisata curug Cileat sekitar 20 KM</div>
+								<div class="harga-angkot">Rp. 10.000</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="wadah-total-12">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 18.000</p>
+				</div>
+							<!-- Brigjen ke TP -->
+							<!-- <div class="time time-ALN-CC"><i class="fas fa-home"> </i> 1 Jam 20 Menit</div> -->
+							<div class="petunjukBGJ-TP">
+							<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauOren.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Tugu Nanas Sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 5.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Elp.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Elp Menuju Wisata Gunung Tangkuban perahu sekitar 22 KM</div>
+								<div class="harga-angkot">Rp. 15.000</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="wadah-total-16">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 23.000</p>
+				</div>
+
+					<!-- Brigjen - Pamoyanan -->
+					<div class="petunjukBGJ-PM">
+					<table width="100%">
+						<tr>
+							<td>
+								<div class="icon-kendaraan" ><img src="assets/imgs/angkot/HijauOren.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Pujasera - Sompi menuju Wisma Karya Subang Sekitar 5 KM</div>
+								<div class="harga-angkot">Rp. 3.000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan">Naik Angkot Subang Kota - Jalan Cagak menuju Jl Tambak Mekar sekitar 10 KM</div>
+								<div class="harga-angkot">Rp. 5000</div>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/Biru.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Naik Angkot Kasomalang - Tanjung siang - Cisalak menuju Ke tempat wisata Bukit Pamoyanan sekitar 15 KM</div>
+								<div class="harga-angkot">Rp. 15000</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><div class="garis-bawah"></div></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="icon-kendaraan"><img src="assets/imgs/angkot/walking.png"></div>
+							</td>
+							<td>
+								<div class="Penjelasan"> Jalan Menuju Objek Wisata Bukit Pamoyanan sekitar 1 KM</div>
+							</td>
+						</tr>				
+					</table>
+				</div>
+				<div class="wadah-total-20">
+					<p class="total">Total</p>
+					<p class="harga-total">Rp. 23.000</p>
+				</div>
+
+
+						</div>
+					</div>
+
+					<script  src="assets/js/section2.js"></script>
+					<script async defer
+					  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBglDwseEcDgth2RhlYlzVjxTip52CnekA&callback=initMap">
+					</script>
+					<script src="gma/script.js"></script>
+				</body>
+				</html>
+

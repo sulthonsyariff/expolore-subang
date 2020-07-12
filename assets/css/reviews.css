@@ -1,0 +1,226 @@
+.container-reviews {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  font-family: "Montserrat",sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: inherit;
+  margin-top: -120px;
+  z-index: 3; }
+
+.container-reviews:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  top: -100px;
+  right: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  z-index: -1; }
+
+.container-reviews:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/sea.jpg);
+  background-size: cover;
+  background-position: 0px -60px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transform-origin: top right;
+  transform: skewY(-4deg); }
+
+.reviews {
+  margin: 0 75px 0 77px;
+  position: relative; }
+  .reviews .judul {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 25px;
+    color: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1.5s; }
+  .reviews .judul.munculyah {
+    opacity: 1;
+    transform: scale(1); }
+  .reviews .testimoni {
+    box-sizing: border-box;
+    position: absolute;
+    left: 33.5%;
+    margin-top: 35px;
+    display: inline-block;
+    width: 380px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transform: scale(0) rotate(45deg);
+    z-index: 1;
+    border-radius: 10px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: 1s; }
+    .reviews .testimoni .foto {
+      width: 85px;
+      height: 85px;
+      transform: scale(0) rotate(-45deg);
+      border-radius: 50%;
+      margin-top: 40px;
+      margin-left: 40px;
+      background-size: cover;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      overflow: hidden;
+      opacity: 0;
+      transition: 1s; }
+      .reviews .testimoni .foto img {
+        width: 100%;
+        height: 100%; }
+    .reviews .testimoni h2 {
+      position: absolute;
+      transform: scale(0) rotate(-45deg);
+      top: 110px;
+      left: -50px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+      opacity: 0;
+      transition: 1s; }
+    .reviews .testimoni h3 {
+      width: 100%;
+      position: absolute;
+      transform: scale(0) rotate(-45deg);
+      top: 140px;
+      left: -35px;
+      text-align: center;
+      letter-spacing: 3px;
+      font-size: 15px;
+      font-weight: 100;
+      opacity: 0;
+      transition: 1s; }
+    .reviews .testimoni p {
+      position: absolute;
+      transform: scale(0) rotate(-45deg);
+      top: 150px;
+      left: 85px;
+      font-size: 15px;
+      font-weight: 100;
+      opacity: 0;
+      transition: 1s; }
+    .reviews .testimoni .garis-bawah {
+      position: absolute;
+      transform: scale(0) rotate(-45deg);
+      width: 100px;
+      height: 1px;
+      background: #fff;
+      top: 170px;
+      left: 125px;
+      opacity: 0;
+      transition: 1s; }
+    .reviews .testimoni span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("../img/quot.png");
+      background-size: cover; }
+    .reviews .testimoni .foto.munculsiah, .reviews .testimoni h2.munculsiah, .reviews .testimoni h3.munculsiah,
+    .reviews .testimoni p.munculsiah, .reviews .testimoni .kiri.munculsiah, .reviews .testimoni .kanan.munculsiah,
+    .reviews .testimoni .geser.munculsiah {
+      transform: scale(1) rotate(-45deg);
+      opacity: 1; }
+  .reviews .kiri {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    transform: scale(0) rotate(-45deg);
+    left: 5px;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1s; }
+    .reviews .kiri i {
+      font-size: 40px;
+      color: #fff;
+      transition: .4s; }
+  .reviews .kiri:hover i {
+    margin-top: -2px;
+    margin-left: -2px; }
+  .reviews .kanan {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    transform: scale(0) rotate(-45deg);
+    right: 5px;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1s; }
+    .reviews .kanan i {
+      font-size: 40px;
+      color: #fff;
+      transition: .4s; }
+  .reviews .kanan:hover i {
+    margin-right: -2px;
+    margin-bottom: -2px; }
+  .reviews .geser {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 115px;
+    height: 15px;
+    margin-top: 150px;
+    margin-left: 230px;
+    transform: scale(0) rotate(-45deg);
+    opacity: 0;
+    transition: 1s; }
+  .reviews .pilih {
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    z-index: 10; }
+  .reviews .aktif {
+    background: #fff; }
+  .reviews .testimoni {
+    opacity: 0; }
+  .reviews .testimoni-1.aktifkan,
+  .reviews .testimoni-2.aktifkan,
+  .reviews .testimoni-3.aktifkan,
+  .reviews .testimoni-4.aktifkan,
+  .reviews .testimoni-5.aktifkan {
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+    transition: 1s; }
+
+/*# sourceMappingURL=reviews.css.map */

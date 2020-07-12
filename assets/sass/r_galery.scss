@@ -1,0 +1,70 @@
+@media screen and (max-width: 320px) {
+	.container-galery {
+	height: 300vh;
+	}
+	.galery {
+		margin: 20px 16px;
+		position: relative;
+		.judul {
+			font-size: 25px;
+			font-weight: 400;
+			padding: 0px;
+			    margin: 0px;
+		}
+		.mountain {
+			margin-top: 30px;
+		}	
+		.sea {
+			margin-top: 30px;	
+		}
+		.waterfall {
+			margin-top: 30px;
+		}
+		.hotspring {
+			margin-top: 30px;
+		}
+		.garis-pinggir {
+			width: 30px;
+			height: 2px;
+			top: 17px;
+			background: #fff;
+			position: absolute;
+		}
+
+	}
+		/*Overlay*/
+		.overlay {
+			text-align: left;
+			padding: 50px;
+
+			.imgM {
+				width: 220px;
+				height: 300px;
+				margin-top: 60px;
+				margin-right: 10px;
+			}
+		}
+	/*Hover IMG*/
+
+	.hover-gambar h4{
+		font-size: 35px;
+		top: 55px;
+	}
+	.hover-gambar p{
+		font-size: 20px;
+		top: 50%;
+		left: 50px;
+	}
+	.idr {
+			top: 85%;
+			margin-left: 80px;
+		}	
+
+	.overlay .close {
+		font-size: 20px;
+	}
+
+		#kanan,#kanan2,#kanan3,#kanan4,#kiri,#kiri2,#kiri3,#kiri4 {
+			font-size: 20px;
+		}
+}

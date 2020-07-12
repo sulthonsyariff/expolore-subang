@@ -1,0 +1,217 @@
+@media screen and (max-width: 320px) {
+
+.container-our_services {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	height: 245vh;
+	background-image: url(../img/gunungbg.png);
+	background-size: cover;
+	z-index: 1;	
+	&:before {
+		content:'';
+		position: absolute;
+		width: 50%;
+		height: 100px;
+		top: -48px;
+		left: 0;
+		background: #fff;
+		transform: skewY(8deg);
+		z-index: -1;
+	}
+	&:after {
+		content:'';
+		position: absolute;
+		width: 50%;
+		height: 100px;
+		top: -48px;
+		right: 0;
+		background: #fff;
+		transform: skewY(-8deg);
+		z-index: -1;
+	}
+}
+.our_services {
+	margin-top: -30px;
+	position: relative;
+
+	.judul {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 25px;
+		font-weight: 400;
+		text-align: center;
+		padding-top: -45px;
+		padding-bottom: 10px;
+		z-index: 10;
+		opacity: 0;
+		transition: 1s;
+	}	
+	.item-kiri {
+		left: -15%;
+		position: absolute;		
+		margin-top: 50px;
+		display: inline-block;
+		width: 180px;
+		height: 180px;
+		color: #fff;
+		transform: rotate(45deg);
+		border-radius: 10px;		
+		overflow: hidden;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 1s;		
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+		
+		img {
+			width: 160%;
+			height: 160%;
+			transform: rotate(-45deg);
+			margin-top: -50px;
+			margin-left: -60px; 
+		}
+	i {
+		transform: rotate(-45deg);
+		margin-top: 60px;
+		margin-left: 55px;
+		font-size: 80px;
+	}
+
+	}
+	.item-tengah {
+		position: absolute;
+		left: 40%;
+		margin-top: 440px;
+		display: inline-block;
+		width: 180px;
+		height: 180px;
+		background: salmon;
+		color: #fff;
+		transform: rotate(45deg);
+		z-index: 1;
+		border-radius: 10px;
+		overflow: hidden;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 2.5s;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		img {
+			width: 160%;
+			height: 160%;
+			transform: rotate(-45deg);
+			margin-top: -50px;
+			margin-left: -60px;
+		}	
+	
+	i {
+		transform: rotate(-45deg);
+		margin-top: 30px;
+		margin-left: 80px;
+		font-size: 100px;
+	}
+
+	}
+	.item-kanan {
+		position: absolute;
+		right: 40%;
+		margin-top: 830px;
+		display: inline-block;
+		width: 180px;
+		height: 180px;
+		background: lightskyblue;
+		color: #fff;
+		transform: rotate(45deg);
+		border-radius: 10px;
+		overflow: hidden;		
+		opacity: 0;
+		transition: .5s;
+		transition-delay:4s;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+		img {
+			width: 160%;
+			height: 160%;
+			transform: rotate(-45deg);
+			margin-top: -50px;
+			margin-left: -60px;
+
+		}
+	i {
+		transform: rotate(135deg);
+		margin-top: 60px;
+		margin-left: 55px;
+		font-size: 80px;
+	}
+	
+	}
+	p.kiri {
+		position: absolute;
+		left: 50%;
+		margin-top: 290px;
+		font-size: 20px;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 1.5s;
+	}
+	p.tengah {
+		position: absolute;
+		left: -20%;
+		margin-top: 680px;
+		font-size: 20px;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 3s;
+	}
+	p.kanan {
+		position: absolute;
+		right: -15%;
+		margin-top: 1070px;
+		font-size: 20px;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 4.5s;
+	}
+	p.penjelasan-kiri {
+		font-family: 'Karla';		
+		position: absolute;
+		left: -30%;
+		margin-top: 330px;
+		font-size: 16px;
+		width: 210px;
+		text-align: center;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 2s;		
+	}
+	p.penjelasan-tengah {
+		font-family: 'Karla';		
+		position: absolute;
+		left: 30%;
+		margin-top: 720px;
+		font-size: 16px;
+		width: 210px;
+		text-align: center;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 3.5s;		
+	}
+	p.penjelasan-kanan {
+		font-family: 'Karla';		
+		position: absolute;
+		right: 20%;
+		margin-top: 1110px;
+		font-size: 16px;
+		width: 210px;
+		text-align: center;
+		opacity: 0;
+		transition: .5s;
+		transition-delay: 5s;		
+	}	
+
+  }
+
+}
