@@ -1,2 +1,2 @@
 # expolore-subang
-Website Web Design Competition In Gadjah Mada University
+Project Web Design Competition In Gadjah Mada University
